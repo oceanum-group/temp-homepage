@@ -1,0 +1,29 @@
+.animation-container {
+    position: relative;
+    width: 200vw;
+    height: 150vh;
+    overflow: hidden;
+    margin-top: -50vh;
+}
+
+.feather-light {
+    position: absolute;
+    width: 150vh;
+    height: 150vw;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 0, 0.0) 50%, rgba(255, 255, 255, 0) 100%);
+    transition: transform 1s cubic-bezier(0, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Keyframes for the bouncing effect */
+@keyframes bounce {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 100%;
+        transform: translateX(50vw);
+    }
+}
