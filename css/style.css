@@ -1,0 +1,129 @@
+:root {
+  /* Grays and Neutrals */
+  --clr-bg: #f8f9fa;              /* light gray background */
+  --clr-surface: #e9ecef;         /* light neutral section background */
+  --clr-steel: #6c757d;           /* classic steel gray */
+  --clr-charcoal: #343a40;        /* dark gray for footer/nav */
+
+  /* Accents */
+  --clr-purple: #7e5bef;          /* vibrant but not too loud */
+  --clr-purple-muted: #a393f0;    /* softer variation */
+
+  /* Text Colors */
+  --clr-text: #212529;            /* near-black for headings */
+  --clr-subtext: #495057;         /* dark gray for body */
+
+  /* Call-to-Action / Highlight */
+  --clr-cta: #7e5bef;
+  --clr-cta-hover: #674ee3;
+
+  overscroll-behavior-y: none;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.logo-border {
+  border: 1px solid var(--clr-steel);
+  border-radius: 2px;
+}
+
+.hero {
+  height: 60vh;
+  background-color: var(--clr-bg);
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: var(--clr-text);
+}
+.custom-hero-img {
+  border: 4px solid var(--clr-charcoal); /* or white */
+  /* padding: 4px; */
+  /* background-color: white; */
+  border-radius: 8px;
+}
+
+.hero-with-image {
+  background-image: url("../img/coil_mill_hero_img.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.hero-with-image .overlay {
+  background: rgba(0, 0, 0, 0.3); /* dark overlay for contrast */
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-section {
+  background-color: var(--clr-surface);
+  color: var(--clr-subtext);
+  flex: 1;
+  padding: 4rem 0;    /* plenty of vertical space */
+  display: flex;            /* make it a flex container */
+  align-items: center;      /* vertically center the inner container */
+}
+
+.footer {
+  background-color: var(--clr-charcoal);
+  color: var(--clr-bg);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.btn.btn-cta {
+  background-color: var(--clr-cta);
+  color: white;
+  border: none;
+}
+
+.btn.btn-cta:hover {
+  background-color: var(--clr-cta-hover);
+  color: white;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+/* disable hover on mobile */
+@media (hover: none) {
+  .btn-outline-purple:hover {
+    background-color: transparent;
+    color: var(--clr-purple);
+  }
+}
+
+.form-label em {
+  opacity: 0.55;
+}
+
+/* @media (max-width: 575.98px) { */
+/*   .container { */
+/*     margin-left: 1.5rem !important; */
+/*     margin-right: 1.5rem !important; */
+/*   } */
+/* } */
+

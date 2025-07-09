@@ -1,0 +1,4 @@
+button.btn.btn-outline-secondary.active {
+  border-color: white; 
+  background-color: var(--clr-purple); 
+}

@@ -1,0 +1,7 @@
+.icon-purple {
+  color: var(--clr-purple);
+}
+
+.center-last-card:has(.col:nth-child(odd):last-child) {
+  justify-content: center;
+}
